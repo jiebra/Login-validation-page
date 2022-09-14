@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: poppins, sans-serif;
+    background-color: rgb(75, 25, 194);
+    min-height: 100vh;
+    margin: 0ch;
+}
+.container{
+    background-color: rgb(207, 221, 193);
+    border-radius: 5px;
+    box-shadow: 0px 2px 123px rgba(0, 0, 0, 0.9);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.header{
+    background-color:rgb(207, 221, 193);
+    border-bottom: 1px solid rgb(22, 19, 20);
+    padding: 0px;
+    min-width: 100%;
+    padding-left: 150px;
+}
+header h1{
+    margin:0px;
+    padding: 0px;
+}
+.form{
+    padding: 10px 20px;
+}
+.fom-control{
+    margin-bottom: 1px;
+    padding-bottom: 2px;
+    position: relative;
+    
+}
+.fom-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.fom-control input{
+    border: 2px solid  rgb(240, 233, 237);
+    font-family: inherit;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+}
+.fom-control.succes input{
+  border-color:#2ecc77;
+
+}
+.fom-control.error input{
+   border-color: red;
+}
+.fom-control.succes i.fa-check-circle{
+    color: #2ecc77;
+    visibility: visible;
+}
+.fom-control.error i.fa-exclamation-circle{
+    color: red;
+    visibility:visible;
+}
+.fom-control.error small{
+    color: rgb(224, 15, 15);
+    visibility: visible;
+}
+.fom-control i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.fom-control small{
+    /* position: absolute; */
+    bottom: -2px;
+    left: 0px;
+    visibility: hidden;
+}
+.button{
+    display: block;
+    width: 100%;
+    color: rgb(75, 25, 194);
+    border: 1px cornflowerblue;
+    background-color: none;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: solid 2px rgb(75, 25, 194);
+    font-weight: bold;
+    transition: background-color 0.25s, color 0.25s;
+    font-size: 15px;
+}
+.button:hover{
+    background-color: rgb(75, 25, 194);
+    color: rgb(240, 233, 237);
+}
+.button:hover:active{
+    border: 2px solid rgb(25, 84, 194);
+    outline: none;
+}
